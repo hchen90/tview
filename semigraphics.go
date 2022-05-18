@@ -1,6 +1,6 @@
 package tview
 
-import "github.com/gdamore/tcell/v2"
+import "github.com/hchen90/tcell/v2"
 
 // Semigraphics provides an easy way to access unicode characters for drawing.
 //

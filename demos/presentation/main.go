@@ -16,8 +16,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/gdamore/tcell/v2"
-	"github.com/rivo/tview"
+	"github.com/hchen90/tcell/v2"
+	"github.com/hchen90/tview"
 )
 
 // Slide is a function which returns the slide's main primitive and its title.

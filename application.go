@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gdamore/tcell/v2"
+	"github.com/hchen90/tcell/v2"
 )
 
 const (
@@ -208,9 +208,13 @@ func (a *Application) EnableMouse(enable bool) *Application {
 	return a
 }
 
+func (a *Application) Run() error {
+	return a.RunWithTty("")
+}
+
 // Run starts the application and thus the event loop. This function returns
 // when Stop() was called.
-func (a *Application) Run() error {
+func (a *Application) RunWithTty(dev string) error {
 	var (
 		err, appErr error
 		lastRedraw  time.Time   // The time the screen was last redrawn.
@@ -225,7 +229,7 @@ func (a *Application) Run() error {
 			a.Unlock()
 			return err
 		}
-		if err = a.screen.Init(); err != nil {
+		if err = a.screen.InitWithTty(dev); err != nil {
 			a.Unlock()
 			return err
 		}

@@ -3,7 +3,7 @@ package tview
 import (
 	"sort"
 
-	"github.com/gdamore/tcell/v2"
+	"github.com/hchen90/tcell/v2"
 	colorful "github.com/lucasb-eyer/go-colorful"
 )
 

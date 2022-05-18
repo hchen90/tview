@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/gdamore/tcell/v2"
-	"github.com/rivo/tview"
+	"github.com/hchen90/tcell/v2"
+	"github.com/hchen90/tview"
 )
 
 const textView1 = `[green]func[white] [yellow]main[white]() {

@@ -1,7 +1,7 @@
 package tview
 
 import (
-	"github.com/gdamore/tcell/v2"
+	"github.com/hchen90/tcell/v2"
 )
 
 // Tree navigation events.
